@@ -28,7 +28,8 @@ void Triangle::changeCoordinates() {
 Triangle::~Triangle(void) {
 }
 
-void Triangle::print() {
+void Triangle::print(int currentTriangle) {
+	cout << "Triangle #" << currentTriangle << endl;
 	cout << "A = (" << x1 << ";" << y1 << ")" << endl;
 	cout << "B = (" << x2 << ";" << y2 << ")" << endl;
 	cout << "C = (" << x3 << ";" << y3 << ")" << endl;
@@ -36,6 +37,7 @@ void Triangle::print() {
 	cout << "Side b = " << sideLong_b << endl;
 	cout << "Side c = " << sideLong_c << endl;
 	cout << "Perimeter = " << perimeter << endl;
+	system("pause");
 }
 
 int Triangle::sideLong(int X1, int Y1, int X2, int Y2) {
@@ -46,6 +48,10 @@ void Triangle::calculations() {
 	sideLong_a = sideLong(x1, y1, x2, y2);
 	sideLong_b = sideLong(x2, y2, x3, y3);
 	sideLong_c = sideLong(x1, y1, x3, y3);
-	cout << "calculation done!" << endl;
 	perimeter = sideLong_a + sideLong_b + sideLong_c;
+}
+
+void Triangle::checkTriangleType()
+{
+
 }
