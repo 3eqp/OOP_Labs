@@ -35,6 +35,7 @@ void Triangle::print() {
 	cout << "Side a = " << sideLong_a << endl;
 	cout << "Side b = " << sideLong_b << endl;
 	cout << "Side c = " << sideLong_c << endl;
+	cout << "Perimeter = " << perimeter << endl;
 }
 
 int Triangle::sideLong(int X1, int Y1, int X2, int Y2) {
