@@ -1,9 +1,5 @@
-﻿  stdafx.cpp
-  triangle.cpp
-c:\users\johnsilver\desktop\lab2\lab2\triangle.cpp(34): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+﻿  triangle.cpp
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\triangle.cpp(41): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
   Lab2.cpp
-c:\users\johnsilver\desktop\lab2\lab2\lab2.cpp(10): error C2065: 'x1': undeclared identifier
-c:\users\johnsilver\desktop\lab2\lab2\lab2.cpp(10): error C2065: 'x2': undeclared identifier
-c:\users\johnsilver\desktop\lab2\lab2\lab2.cpp(10): error C2065: 'y2': undeclared identifier
-c:\users\johnsilver\desktop\lab2\lab2\lab2.cpp(11): error C2146: syntax error: missing ';' before identifier 'A'
   Generating Code...
+  Lab2.vcxproj -> D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab2\Debug\Lab2.exe
