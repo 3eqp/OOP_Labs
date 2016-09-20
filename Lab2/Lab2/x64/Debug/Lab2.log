@@ -1,1 +1,10 @@
-﻿  Lab2.vcxproj -> D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab2\x64\Debug\Lab2.exe
+﻿  Lab2.cpp
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\lab2.cpp(28): warning C4101: 'typeArray_4': unreferenced local variable
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\lab2.cpp(28): warning C4101: 'typeArray_1': unreferenced local variable
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\lab2.cpp(28): warning C4101: 'typeArray_3': unreferenced local variable
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\lab2.cpp(28): warning C4101: 'typeArray_2': unreferenced local variable
+d:\google drive\универ\2 курс\ооп\лабы\lab2\lab2\lab2.cpp(28): warning C4101: 'typeArray_0': unreferenced local variable
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  triangle.cpp
+  Lab2.vcxproj -> D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab2\x64\Debug\Lab2.exe

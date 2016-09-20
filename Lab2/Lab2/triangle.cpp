@@ -6,7 +6,7 @@ using namespace std;
 Triangle::Triangle() {
 }
 
-Triangle::Triangle(int X1, int Y1, int X2, int Y2, int X3, int Y3) {
+Triangle::Triangle(float X1, float Y1, float X2, float Y2, float X3, float Y3) {
 	x1 = X1;
 	x2 = X2;
 	x3 = X3;
@@ -41,7 +41,7 @@ void Triangle::print(int currentTriangle) {
 	system("pause");
 }
 
-double Triangle::sideLong(int X1, int Y1, int X2, int Y2) {
+float Triangle::sideLong(float X1, float Y1, float X2, float Y2) {
 	return sqrt(pow(X2 - X1, 2) + pow(Y2 - Y1, 2));
 }
 
