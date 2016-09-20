@@ -10,31 +10,56 @@ Triangle arrayOfTriangles[maxNumberOfTriangles];
 
 void menu();
 
-void maxminCalculations() {
-
+void maxminCalculations(int typeNum, int *maxId, int *minId) {
+	int max = 0, min = 99999;
+	for (int i = 0; i < numberOfTriangles; i++)
+		if (arrayOfTriangles[i].perimeter > max && arrayOfTriangles[i].triangleType == typeNum) {
+			max = arrayOfTriangles[i].perimeter;
+			*maxId = i;
+		}
+	for (int i = 0; i < numberOfTriangles; i++)
+		if (arrayOfTriangles[i].perimeter < min && arrayOfTriangles[i].triangleType == typeNum) {
+			min = arrayOfTriangles[i].perimeter;
+			*minId = i;
+		}
 }
 
-int typeDetailsCalculations(int typeNum, int typeArray[], int typeSize, int maxId, int minId) {
-	int j = 0;
-	for (int i = 0; i < maxNumberOfTriangles; i++)
+void typeDetailsCalculations(int typeNum, int *typeSize, int *maxId, int *minId) {
+	for (int i = 0; i < numberOfTriangles; i++)
 		if (arrayOfTriangles[i].triangleType == typeNum) {
-			typeArray[j] = i;
-			typeSize++;
-			j++;
+			*typeSize += 1;
 		}
-	return typeNum, typeSize;
+	maxminCalculations(typeNum, &*maxId, &*minId);
+}
+
+void maxminPrint(int typeNum, int maxId, int minId) {
+	if (typeNum == arrayOfTriangles[maxId].triangleType && typeNum == arrayOfTriangles[minId].triangleType) {
+		cout << "Max Perimeter: #" << maxId + 1 << " " << arrayOfTriangles[maxId].perimeter << endl;
+		cout << "Min Perimeter: #" << minId + 1<< " " << arrayOfTriangles[minId].perimeter << endl;
+	}
+	cout << endl;
 }
 
 void showTriangleList() {
-	int typeArray_0[10], typeArray_1[10], typeArray_2[10], typeArray_3[10], typeArray_4[10];
-	int typeSize0 = 0, typeSize1 = 0, typeSize2 = 0, typeSize3 = 0, typeSize4 = 0;
+	int typeSize_1 = 0, typeSize_2 = 0, typeSize_3 = 0, typeSize_4 = 0;
+	int maxPerimeterId_1 = 0, maxPerimeterId_2 = 0, maxPerimeterId_3 = 0, maxPerimeterId_4 = 0;
+	int minPerimeterId_1 = 0, minPerimeterId_2 = 0, minPerimeterId_3 = 0, minPerimeterId_4 = 0;
 
 	system("cls");
-	cout << "Равнобедренных: " << typeDetailsCalculations(4, typeArray_4[10], typeSize4, maxPerimeterId_4, minPerimeterId_4) << endl;
-	//cout << "Max Perimeter: #" << maxPerimeterId_4 << " " << arrayOfTriangles[maxPerimetrId_4].perimeter << endl;
-	cout << "Разносторонних: " << typeSize1 << endl;
-	cout << "Равносторонних: " << typeSize2 << endl;
-	cout << "Прямоугольных: " << typeSize3 << endl;
+	typeDetailsCalculations(1, &typeSize_1, &maxPerimeterId_1, &minPerimeterId_1);
+	typeDetailsCalculations(2, &typeSize_2, &maxPerimeterId_2, &minPerimeterId_2);
+	typeDetailsCalculations(3, &typeSize_3, &maxPerimeterId_3, &minPerimeterId_3);
+	typeDetailsCalculations(4, &typeSize_4, &maxPerimeterId_4, &minPerimeterId_4);
+
+	cout << "Разносторонних: " << typeSize_1 << endl;
+	maxminPrint(1, maxPerimeterId_1, minPerimeterId_1);
+	cout << "Равносторонних: " << typeSize_2 << endl;
+	maxminPrint(2, maxPerimeterId_2, minPerimeterId_2);
+	cout << "Прямоугольных: " << typeSize_3 << endl;
+	maxminPrint(3, maxPerimeterId_3, minPerimeterId_3);
+	cout << "Равнобедренных: " << typeSize_4 << endl;
+	maxminPrint(4, maxPerimeterId_4, minPerimeterId_4);
+
 	system("pause");
 	menu();
 }
@@ -57,7 +82,7 @@ void switchTriangle() {
 	cout << " You have " << numberOfTriangles << " Triangles" << endl;
 	cout << "0. Exit" << endl;
 	for (int i = 0; i < numberOfTriangles; i++)
-		cout << i + 1 << ". " << triangleTypeConverter(i) << endl;
+		cout << i + 1 << ". " << triangleTypeConverter(i) << "	Perimeter = " << arrayOfTriangles[i].perimeter << endl;
 	cin >> num;
 	if (num != 0)
 		currentTriangle = num - 1;
