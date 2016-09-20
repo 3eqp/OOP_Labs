@@ -37,7 +37,7 @@ void switchTriangle() {
 
 void createTriangle() {
 	numberOfTriangles++;
-	currentTriangle = numberOfTriangles;
+	currentTriangle = numberOfTriangles - 1;
 	arrayOfTriangles[currentTriangle].changeCoordinates();
 	arrayOfTriangles[currentTriangle].print(currentTriangle);
 	menu();
@@ -49,7 +49,7 @@ void menu()
 
 	system("cls");
 	cout << "Welcome to Triangle creator!  You have " << numberOfTriangles << " Triangles" << endl;
-	cout << "Now you are working with " << currentTriangle << " Triangle" << endl << endl;
+	cout << "Now you are working with " << currentTriangle + 1 << " Triangle" << endl << endl;
 	cout << "1. Create new Triangle" << endl;
 	cout << "2. Choose existing Triangle" << endl;
 	//list of Triangles + their types

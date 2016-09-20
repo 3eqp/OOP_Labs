@@ -41,7 +41,7 @@ void Triangle::print(int currentTriangle) {
 	system("pause");
 }
 
-int Triangle::sideLong(int X1, int Y1, int X2, int Y2) {
+double Triangle::sideLong(int X1, int Y1, int X2, int Y2) {
 	return sqrt(pow(X2 - X1, 2) + pow(Y2 - Y1, 2));
 }
 
