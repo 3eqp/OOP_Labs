@@ -37,6 +37,7 @@ void Triangle::print(int currentTriangle) {
 	cout << "Side b = " << sideLong_b << endl;
 	cout << "Side c = " << sideLong_c << endl;
 	cout << "Perimeter = " << perimeter << endl;
+	cout << "Triangle type: " << printTriangleType() << endl;
 	system("pause");
 }
 
@@ -49,9 +50,35 @@ void Triangle::calculations() {
 	sideLong_b = sideLong(x2, y2, x3, y3);
 	sideLong_c = sideLong(x1, y1, x3, y3);
 	perimeter = sideLong_a + sideLong_b + sideLong_c;
+	checkTriangleType();
 }
 
-void Triangle::checkTriangleType()
-{
+void Triangle::checkTriangleType() {
+	if (sideLong_a + sideLong_b <= sideLong_c || sideLong_a + sideLong_c <= sideLong_b || sideLong_b + sideLong_c <= sideLong_a)
+		triangleType = 0;	//Треугольник не существует
+	else
+		if ((sideLong_a == sqrt(sideLong_b*sideLong_b + sideLong_c*sideLong_c)) ||
+			(sideLong_b == sqrt(sideLong_a*sideLong_a + sideLong_c*sideLong_c)) ||
+			(sideLong_c == sqrt(sideLong_a*sideLong_a + sideLong_b*sideLong_b)))
+			triangleType = 3;	//Прямоугольный
+		else
+			if (sideLong_a == sideLong_b && sideLong_b == sideLong_c)
+				triangleType = 2;	//Равносторонний
+			else
+				if (sideLong_a != sideLong_b && sideLong_a != sideLong_c && sideLong_b != sideLong_c)
+					triangleType = 1;	//Разносторонний
+			else
+				triangleType = 4;	//Равнобедренный
+}
 
+char* Triangle::printTriangleType() {
+	char *triangleTypeName[26];
+	switch (triangleType) {
+	case 0: *triangleTypeName = "Треугольник не существует"; break;
+	case 1: *triangleTypeName = "Разносторонний"; break;
+	case 2: *triangleTypeName = "Равносторонний"; break;
+	case 3: *triangleTypeName = "Прямоугольный"; break;
+	case 4: *triangleTypeName = "Равнобедренный"; break;
+	};
+	return *triangleTypeName;
 }
