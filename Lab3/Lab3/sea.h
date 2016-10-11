@@ -3,10 +3,10 @@
 class Sea :
 	public Geo 
 {
-	int zarplata;
+	int width;
 public:
 	Sea(void);
-	void setzarplata(int zarplata);
-	void getzarplata();
+	void setwidth(int zarplata);
+	void getwidth();
 	~Sea(void);
 };

@@ -5,17 +5,17 @@
 using namespace std;
 
 Sea::Sea(void) {
-	cout << "вызывается конструктор преподавателя" << endl;
+	cout << "вызывается конструктор моря" << endl;
 }
 
-void Sea::setzarplata(int zarplata) {
-	this->zarplata = zarplata;
+void Sea::setwidth(int width) {
+	this->width = width;
 }
 
-void Sea::getzarplata() {
-	cout << "зарплата преподавателя: " << this->zarplata << endl;
+void Sea::getwidth() {
+	cout << "протяженность моря: " << this->width << endl;
 }
 
 Sea::~Sea(void) {
-	cout << "вызывается деструктор преподавателя" << endl;
+	cout << "вызывается деструктор моря" << endl;
 }

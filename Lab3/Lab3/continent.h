@@ -3,10 +3,10 @@
 class Continent :
 	public Geo
 {
-	int stependia;
+	int area;
 public:
 	Continent(void);
-	void setstependia(int x);
-	void getstependia();
+	void setarea(int x);
+	void getarea();
 	~Continent(void);
 };

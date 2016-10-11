@@ -5,7 +5,7 @@
 using namespace std;
 
 Geo::Geo(void) {
-	cout << "вызывается конструктор персоны" << endl;
+	cout << "вызывается гографический конструктор" << endl;
 }
 
 void Geo::setname(char *name) {
@@ -13,9 +13,9 @@ void Geo::setname(char *name) {
 }
 
 void Geo::getname() {
-	cout << "имя персоны: " << this->name << endl;
+	cout << "имя объекта: " << this->name << endl;
 }
 
 Geo::~Geo(void) {
-	cout << "вызывается деструктор персоны" << endl;
+	cout << "вызывается георграфический деструктор" << endl;
 }

@@ -3,10 +3,10 @@
 class Country :
 	public Sea
 {
-	char *kafedra;
+	char *name;
 public:
 	Country(void);
-	void setkafedra(char *kafedra);
-	void getkafedra();
+	void setname(char *name);
+	void getname();
 	~Country(void);
 };

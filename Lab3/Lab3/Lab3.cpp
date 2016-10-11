@@ -14,28 +14,26 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "rus");
 	Geo a;
-	a.setname("Александр");
+	a.setname("Земля");
 	a.getname();
 	cout << endl;
 	Sea b;
-	b.setname("Михаил Юрьевич");
+	b.setname("Черное море");
 	b.getname();
-	b.setzarplata(1800000);
-	b.getzarplata();
+	b.setwidth(18040);
+	b.getwidth();
 	cout << endl;
 	Continent c;
-	c.setname("Иванов Петр");
+	c.setname("Континентик");
 	c.getname();
-	c.setstependia(101900);
-	c.getstependia();
+	c.setarea(101900);
+	c.getarea();
 	cout << endl;
 	Country d;
-	d.setname("Гурин Владимир Иванович");
+	d.setname("Буржузия");
 	d.getname();
-	d.setzarplata(2300000);
-	d.getzarplata();
-	d.setkafedra("ИСиТ");
-	d.getkafedra();
+	d.setwidth(21020);
+	d.getwidth();
 	cout << endl;
 	return 0;
 }

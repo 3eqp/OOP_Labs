@@ -5,17 +5,17 @@
 using namespace std;
 
 Country::Country(void) {
-	cout << "вызывается конструктор завкафедры" << endl;
+	cout << "вызывается конструктор страны" << endl;
 }
 
-void Country::setkafedra(char *kafedra) {
-	this->kafedra = kafedra;
+void Country::setname(char *name) {
+	this->name = name;
 }
 
-void Country::getkafedra() {
-	cout << "кафедра заведующего: " << this->kafedra << endl;
+void Country::getname() {
+	cout << "название страны: " << this->name << endl;
 }
 
 Country::~Country(void) {
-	cout << "вызывается деструктор завкафедры" << endl;
+	cout << "вызывается деструктор страны" << endl;
 }

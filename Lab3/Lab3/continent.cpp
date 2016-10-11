@@ -5,17 +5,17 @@
 using namespace std;
 
 Continent::Continent(void) {
-	cout << "вызывается конструктор студента" << endl;
+	cout << "вызывается конструктор континента" << endl;
 }
 
-void Continent::setstependia(int x) {
-	this->stependia = x;
+void Continent::setarea(int x) {
+	this->area = x;
 }
 
-void Continent::getstependia() {
-	cout << "степендия студента: " << this->stependia << endl;
+void Continent::getarea() {
+	cout << "площадь континента: " << this->area << endl;
 }
 
 Continent::~Continent(void) {
-	cout << "вызывается деструктор студента" << endl;
+	cout << "вызывается деструктор континента" << endl;
 }
