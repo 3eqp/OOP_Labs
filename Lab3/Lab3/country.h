@@ -1,12 +1,13 @@
 #pragma once
-#include "sea.h"
+#include "continent.h"
+#include "land.h"
 class Country :
-	public Sea
+	public Continent
 {
-	char *name;
+	char *country_name;
 public:
 	Country(void);
-	void setname(char *name);
-	void getname();
+	void setcountry_name(char *country_name);
+	void getcountry_name();
 	~Country(void);
 };

@@ -36,6 +36,12 @@
     <ClInclude Include="country.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="island.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="land.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -54,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="country.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="island.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="land.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

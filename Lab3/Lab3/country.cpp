@@ -8,12 +8,12 @@ Country::Country(void) {
 	cout << "вызывается конструктор страны" << endl;
 }
 
-void Country::setname(char *name) {
-	this->name = name;
+void Country::setcountry_name(char *country_name) {
+	this->country_name = country_name;
 }
 
-void Country::getname() {
-	cout << "название страны: " << this->name << endl;
+void Country::getcountry_name() {
+	cout << "название страны: " << this->country_name << endl;
 }
 
 Country::~Country(void) {

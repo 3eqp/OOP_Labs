@@ -3,10 +3,10 @@
 class Sea :
 	public Geo 
 {
-	int width;
+	int sea_area;
 public:
 	Sea(void);
-	void setwidth(int zarplata);
-	void getwidth();
+	void setsea_area(int sea_area);
+	void getsea_area();
 	~Sea(void);
 };

@@ -8,12 +8,12 @@ Continent::Continent(void) {
 	cout << "вызывается конструктор континента" << endl;
 }
 
-void Continent::setarea(int x) {
-	this->area = x;
+void Continent::setcontinent_area(int continent_area) {
+	this->continent_area = continent_area;
 }
 
-void Continent::getarea() {
-	cout << "площадь континента: " << this->area << endl;
+void Continent::getcontinent_area() {
+	cout << "площадь континента: " << this->continent_area << endl;
 }
 
 Continent::~Continent(void) {

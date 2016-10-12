@@ -8,12 +8,12 @@ Sea::Sea(void) {
 	cout << "вызывается конструктор моря" << endl;
 }
 
-void Sea::setwidth(int width) {
-	this->width = width;
+void Sea::setsea_area(int sea_area) {
+	this->sea_area = sea_area;
 }
 
-void Sea::getwidth() {
-	cout << "протяженность моря: " << this->width << endl;
+void Sea::getsea_area() {
+	cout << "протяженность моря: " << this->sea_area << endl;
 }
 
 Sea::~Sea(void) {

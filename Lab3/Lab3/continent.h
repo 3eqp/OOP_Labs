@@ -3,10 +3,10 @@
 class Continent :
 	public Geo
 {
-	int area;
+	int continent_area;
 public:
 	Continent(void);
-	void setarea(int x);
-	void getarea();
+	void setcontinent_area(int continent_area);
+	void getcontinent_area();
 	~Continent(void);
 };
