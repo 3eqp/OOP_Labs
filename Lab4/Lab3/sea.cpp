@@ -8,6 +8,13 @@ Sea::Sea(void) {
 	cout << "вызывается конструктор моря" << endl;
 }
 
+
+const int Sea::newlol()
+{
+	cout << lol << endl;
+	return 0;
+}
+
 void Sea::setsea_area(int sea_area) {
 	this->sea_area = sea_area;
 }

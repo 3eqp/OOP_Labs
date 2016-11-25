@@ -6,6 +6,7 @@ using namespace std;
 
 Island::Island(void) {
 	cout << "вызывается конструктор острова" << endl;
+	counter++;
 }
 
 void Island::setisland_area(int x) {
@@ -18,4 +19,7 @@ void Island::getisland_area() {
 
 Island::~Island(void) {
 	cout << "вызывается деструктор острова" << endl;
+	counter--;
 }
+
+int Island::counter = 0;

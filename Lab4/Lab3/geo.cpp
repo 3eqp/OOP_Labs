@@ -19,3 +19,13 @@ void Geo::getname() {
 Geo::~Geo(void) {
 	cout << "вызывается георграфический деструктор" << endl;
 }
+
+bool Wild::isreal()
+{
+	return true;
+}
+
+bool Wild::isnotreal()
+{
+	return false;
+}

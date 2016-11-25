@@ -16,17 +16,22 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "rus");
 
-	Geo a;
-	a.setname("Земля");
-	a.getname();
-	cout << endl;
+	/*
+	Wild wild;
+	Wild::Nested_class Nest;
+	Nest.Outside_class_check(wild);
+	Curator Normal;
+	wild.isreal();
 
 	Sea b;
 	b.setname("Черное море");
 	b.getname();
 	b.setsea_area(18040);
 	b.getsea_area();
-	cout << endl;
+	b.newlol();
+
+	Human hum;
+	NEWS newsfd;
 
 	Continent c;
 	c.setname("Континентик");
@@ -50,7 +55,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	l.setcontinent_area(32453455);
 	l.getcontinent_area();
 	cout << endl;
-
+	
 	Island i;
 	i.setname("Островок");
 	i.getname();
@@ -59,6 +64,21 @@ int _tmain(int argc, _TCHAR* argv[])
 	i.setsea_area(43253);
 	i.getsea_area();
 	cout << endl;
+	*/
+
+	//5
+	Sea s;
+	Inspector insp;
+	insp.iKnowAllAboutYou(s);
+
+
+	//6
+	Island one;
+	cout << "Isles counter: " << one.getCounter();
+	Island two;
+	cout << "Isles counter: " << two.getCounter();
+
+	//7
 
 	return 0;
 }
