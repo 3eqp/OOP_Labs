@@ -25,10 +25,10 @@ public:
 	virtual void area() {
 		cout << "lolsea" << endl;
 	};
-	void toConsole()
-	{
+	//TASK 7
+	void toConsole() {
 		cout << typeid(this).name() << endl;
-	};
+	}
 
 	// ÇÀÄÀÍÈÅ ¹5
 

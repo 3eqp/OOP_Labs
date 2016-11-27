@@ -7,10 +7,6 @@ public:
 	class geoClass {
 		int geoVariable;
 	};
-	virtual int area(int count)
-	{
-		return 1;
-	};
 	Geo(void);
 	void setname(char *name);
 	void getname();
@@ -66,4 +62,14 @@ public:
 	
 protected:
 	bool isnotreal();
+};
+
+class Printer {
+public:
+	void iAmPrinting(Geo *someobj) {
+		cout << "Type: " << typeid(*someobj).name() << endl;
+		cout << typeid(this).name() << endl;
+		someobj->toConsole();
+		cout << endl;
+	}
 };

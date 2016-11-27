@@ -13,14 +13,14 @@ public:
 	void setisland_area(int x);
 	void getisland_area();
 	~Island(void);
-	void toConsole()
-	{
-		cout << typeid(this).name() << endl;
-	};
-
 	//TASK 6
 	
 	static int getCounter() {
 		return counter;
+	}
+
+	//TASK 7
+	void toConsole() {
+		cout << typeid(this).name() << endl;
 	}
 };

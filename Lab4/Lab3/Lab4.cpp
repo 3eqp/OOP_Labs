@@ -79,6 +79,52 @@ int _tmain(int argc, _TCHAR* argv[])
 	cout << "Isles counter: " << two.getCounter();
 
 	//7
+	Island *newIsl = new Island;
+	Sea *newSea = new Sea;
+	Printer alluse;
+	alluse.iAmPrinting(newIsl);
+	alluse.iAmPrinting(newSea);
+
+	//8
+	cout << "**************" << endl;
+	Geo *odin = new Sea;
+	Geo *dva = new Island;
+	Geo *tri = new Land;
+
+	odin->toConsole(); 	cout << endl;
+
+	odin = dynamic_cast<Sea*>(dva); //повышающее-от производного класса к базовому
+	tri = dynamic_cast<Land*>(tri); //перекрестное-от производного класса к другому
+	dva = dynamic_cast<Island*>(odin); //понижающее-от базoвого класса к производному
+
+	odin->toConsole(); 	cout << endl;
+	dva->toConsole(); 	cout << endl;
+	tri->toConsole(); 	cout << endl;
+
+	cout << "**************" << endl;
+
+	const int j = 3;
+	int* pj = const_cast<int*>(&j); //удаление модификатора const
+
+	cout << "**************" << endl;
+
+	//преобразование типа на этапе компиляции
+
+	/*
+	class B {};
+
+	class D : public B {};
+
+	B* pb;
+	D* pd;
+	D* pd2 = static_cast<D*>(pb);   // Not safe, D can have fields and methods that are not in B.  
+	B* pb2 = static_cast<B*>(pd);   // Safe conversion, D always contains all of B.  
+	*/
+
+	int N = 18;
+	cout << static_cast<double>(N) << endl;
+
+	//https://books.google.by/books?id=UM1LDAAAQBAJ&pg=PA248&lpg=PA248&dq=%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D1%80%D0%B5%D1%81%D1%82%D0%BD%D0%BE%D0%B5+%D0%BF%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5+%D0%BC%D0%B5%D0%B6%D0%B4%D1%83+%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D0%BC%D0%B8&source=bl&ots=0OuocUqHEX&sig=XaG5mAlDV3nCbDQ-_D2S6hyOWKs&hl=ru&sa=X&ved=0ahUKEwigwpujwsbQAhUDFCwKHcXNAJEQ6AEIIDAB#v=onepage&q&f=false
 
 	return 0;
 }
