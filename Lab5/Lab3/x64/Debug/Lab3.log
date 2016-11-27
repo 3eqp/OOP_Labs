@@ -1,0 +1,11 @@
+﻿  stdafx.cpp
+  sea.cpp
+  land.cpp
+  Lab4.cpp
+  island.cpp
+  geo.cpp
+  country.cpp
+  continent.cpp
+  Generating Code...
+Lab4.obj : error LNK2019: unresolved external symbol "void __cdecl display_num(int *)" (?display_num@@YAXPEAH@Z) referenced in function wmain
+D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab4\x64\Debug\Lab4.exe : fatal error LNK1120: 1 unresolved externals
