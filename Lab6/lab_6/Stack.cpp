@@ -94,7 +94,7 @@ void Stack::operator>(int size)
 				swap(Array[j], Array[j + 1]);
 			}
 		}
-	}
+	} 
 
 	for (int i = 0; i < size; i++)
 		cout << Array[i] << " ";

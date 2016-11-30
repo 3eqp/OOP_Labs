@@ -102,7 +102,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	tri->toConsole(); 	cout << endl;
 
 	cout << "**************" << endl;
-
+	_cast
 	const int j = 3;
 	int* pj = const_cast<int*>(&j); //удаление модификатора const
 
