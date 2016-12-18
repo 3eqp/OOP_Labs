@@ -4,8 +4,7 @@
 
 using namespace std;
 
-class Error
-{
+class Error : public exception {
 protected:
 	char message[80];
 	int temp;
@@ -16,7 +15,15 @@ public:
 		strcpy_s(message, my_message);
 		temp = tmp;
 	}
+	const char* what() const override {
+		cout << "Error catched" << endl;
+		char* buf = new char[400];
+		strcpy_s(buf, 50, message);
+		cout << message << "0" << endl;
+		return buf;
+	}
 	virtual void show(void) = 0;
+
 	/*void show()
 	{
 		std::cout << "Произошло исключение: ";

@@ -1,0 +1,6 @@
+﻿  stdafx.cpp
+  Stack.cpp
+  Project 3.cpp
+c:\users\johnsilver\desktop\oop_lab_10, 11\project 3\project 3\project 3.cpp(170): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Project 3.vcxproj -> C:\Users\JohnSilver\Desktop\OOP_lab_10, 11\Project 3\Debug\Project 3.exe

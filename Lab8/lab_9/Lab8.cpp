@@ -30,7 +30,7 @@ void cls()
 	system("pause");
 	system("cls");
 }
-
+/*
 void OtherWorkWithPointers(int* val)
 {
 	// фукнция assert оценивает, стоит ли 
@@ -38,7 +38,7 @@ void OtherWorkWithPointers(int* val)
 	assert(val != nullptr);
 	cout << "I'm working" << endl;
 }
-
+*/
 int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "rus");
@@ -153,6 +153,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 		catch (IncorrectSize size)
 		{
+			size.what();
 			size.show();
 			return 0;
 		}

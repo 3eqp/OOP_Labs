@@ -1,7 +1,7 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (lab_9.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   stdafx.cpp
   Lab8.cpp
-c:\users\johnsilver\desktop\lab8\lab_9\triangle.h(36): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\johnsilver\desktop\lab8\lab_9\triangle.h(37): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-c:\users\johnsilver\desktop\lab8\lab_9\triangle.h(38): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  lab_9.vcxproj -> C:\Users\JohnSilver\Desktop\Lab8\x64\Debug\Lab8.exe
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(36): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(37): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(38): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+LINK : fatal error LNK1201: error writing to program database 'D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab8\x64\Debug\Lab8.pdb'; check for insufficient disk space, invalid path, or insufficient privilege

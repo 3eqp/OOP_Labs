@@ -1,17 +1,7 @@
-﻿Сборка начата 01.12.2015 22:24:58.
-     1>Проект "D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\lab_9\lab_9.vcxproj" в узле 2 (целевые объекты Build).
-     1>ClCompile:
-         D:\Programs\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\lab_9.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt lab_9.cpp
-         lab_9.cpp
-     1>d:\university\laboratory works\oop\oop_lab_9\lab_9\lab_9\triangle.h(36): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-     1>d:\university\laboratory works\oop\oop_lab_9\lab_9\lab_9\triangle.h(37): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-     1>d:\university\laboratory works\oop\oop_lab_9\lab_9\lab_9\triangle.h(38): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-       Link:
-         D:\Programs\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\Debug\lab_9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\Debug\lab_9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\Debug\lab_9.lib" /MACHINE:X86 Debug\lab_9.obj
-         Debug\stdafx.obj
-         lab_9.vcxproj -> D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\Debug\lab_9.exe
-     1>Сборка проекта "D:\University\Laboratory works\OOP\OOP_lab_9\lab_9\lab_9\lab_9.vcxproj" завершена (целевые объекты Build).
-
-Сборка успешно завершена.
-
-Затраченное время: 00:00:07.31
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (lab_9.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  stdafx.cpp
+  Lab8.cpp
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(36): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(37): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab8\lab_9\triangle.h(38): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  lab_9.vcxproj -> D:\Google Drive\Универ\2 курс\ООП\Лабы\Lab8\Debug\Lab8.exe
