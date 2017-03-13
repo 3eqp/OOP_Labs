@@ -1,0 +1,5 @@
+﻿  Win32Project1.cpp
+d:\google drive\универ\2 курс\ооп\лабы\lab11_13\win32project1\win32project1\win32project1.cpp(123): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab11_13\win32project1\win32project1\win32project1.cpp(149): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab11_13\win32project1\win32project1\win32project1.cpp(153): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+d:\google drive\универ\2 курс\ооп\лабы\lab11_13\win32project1\win32project1\win32project1.cpp(157): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data

@@ -7,6 +7,7 @@
 #include <set>
 #include <algorithm>
 #include <iostream>
+#include <string>
 #include <iterator>
 #include <cstdlib>
 #include "Stack.h"
@@ -48,6 +49,11 @@ int main()
 		(*i).printStack();*/
 
 	setlocale(LC_ALL, "rus");
+
+	string str = "We think in generalities, but we live in details.";
+	// (quoting Alfred N. Whitehead)
+	string str2 = str.substr(3, 5);
+	cout << str2 << ' ' << '\n';
 
 	list<shared_ptr<Stack>> myList;
 	myList.push_back(make_shared<Stack>());

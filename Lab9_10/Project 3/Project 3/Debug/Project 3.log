@@ -1,6 +1,3 @@
-﻿  stdafx.cpp
-  Stack.cpp
-  Project 3.cpp
-c:\users\johnsilver\desktop\oop_lab_10, 11\project 3\project 3\project 3.cpp(170): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
-  Project 3.vcxproj -> C:\Users\JohnSilver\Desktop\OOP_lab_10, 11\Project 3\Debug\Project 3.exe
+﻿  Project 3.cpp
+d:\google drive\универ\2 курс\ооп\лабы\lab9_10\project 3\project 3\project 3.cpp(178): warning C4018: '<': signed/unsigned mismatch
+LINK : fatal error LNK1201: error writing to program database 'D:\Google Drive\??????\2 ????\???\????\Lab9_10\Project 3\Debug\Project 3.pdb'; check for insufficient disk space, invalid path, or insufficient privilege

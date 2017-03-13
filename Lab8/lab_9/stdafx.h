@@ -9,7 +9,6 @@
 
 #include <stdio.h>
 #include <tchar.h>
-
-//#define NDEBUG
+#define NDEBUG
 
 // TODO: Установите здесь ссылки на дополнительные заголовки, требующиеся для программы
